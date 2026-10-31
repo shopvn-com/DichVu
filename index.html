@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081321">
+  <meta name="description" content="ANIIMO — nền tảng dịch vụ game, lựa chọn gói nạp, tạo đơn và theo dõi trạng thái giao dịch.">
+  <meta property="og:title" content="ANIIMO | Game Services">
+  <meta property="og:description" content="Không gian dịch vụ game dành cho cộng đồng người chơi.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="aniimo-mark.svg" type="image/svg+xml">
+  <title>ANIIMO | Game Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  <div class="announcement"><span class="announcement-dot"></span> ANIIMO SERVICE HUB <span class="announcement-divider">/</span> Không gian dịch vụ dành cho cộng đồng game thủ</div>
+  <header class="header">
+    <div class="header-brands">
+      <a class="partner-brand" href="#home" aria-label="">
+        <img src="koiseki-avatar.jpeg" alt="">
+        <span class="partner-caption"></span>
+      </a>
+      <a class="brand" href="#home"><span class="brand-mark">A</span><span>ANIIMO<span class="dot">.</span><small>GAME SERVICES</small></span></a>
+    </div>
+    <nav>
+      <a class="active" href="#home">Trang chủ</a>
+      <a href="#services">Dịch vụ</a>
+      <a href="#topup">Nạp game</a>
+      <a href="#orders">Tra cứu đơn</a><a href="#support">Hỗ trợ</a>
+    </nav>
+    <button class="btn btn-outline" id="loginBtn">Tài khoản</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> YOUR GAME. YOUR WORLD.</div>
+        <h1>Khám phá thế giới<br><span>Aniimo</span> cùng bạn.</h1>
+        <p>Nạp game thuận tiện, quy trình giao dịch minh bạch và dịch vụ hỗ trợ cộng đồng game thủ — tất cả trong một không gian thân thiện.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#services">Khám phá dịch vụ <b>↗</b></a>
+          <a class="btn btn-ghost" href="#topup">Nạp game ngay</a>
+        </div>
+        <div class="hero-note"><span>✓</span> Thông tin rõ ràng <span>✓</span> Tra cứu bằng mã đơn <span>✓</span> Hỗ trợ trực tiếp</div>
+      </div>
+      <div class="hero-art">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="game-card">
+          <div class="game-card-top"><span>ANIIMO UNIVERSE</span><span class="live">● ONLINE</span></div>
+          <div class="creature">✦</div>
+          <div class="game-card-bottom"><strong>ADVENTURE AWAITS</strong><small>Discover • Collect • Explore</small></div>
+        </div>
+        <div class="float-tag tag-one">✧ Giao dịch an toàn</div>
+        <div class="float-tag tag-two">⚡ Nạp nhanh chóng</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>10</strong><span>Gói nạp đang hiển thị</span></div>
+      <div><strong>03</strong><span>Bước tạo đơn đơn giản</span></div>
+      <div><strong>01</strong><span>Mã đơn để tra cứu</span></div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-heading"><div><div class="eyebrow">OUR SERVICES</div><h2>Dịch vụ nổi bật</h2></div><p>Chọn dịch vụ phù hợp với nhu cầu của bạn.</p></div>
+      <div class="service-grid">
+        <article class="service-card featured"><div class="service-icon">◈</div><span class="service-label">PHỔ BIẾN</span><h3>Nạp game</h3><p>Chọn gói nạp, quét QR ngân hàng và gửi xác nhận giao dịch.</p><a href="#topup">Khám phá <b>↗</b></a></article>
+        <article class="service-card"><div class="service-icon">⇄</div><span class="service-coming">ĐANG PHÁT TRIỂN</span><h3>Trung gian</h3><p>Gửi yêu cầu hỗ trợ giao dịch giữa người mua và người bán.</p><a href="#middleman">Tìm hiểu <b>↗</b></a></article>
+        <article class="service-card"><div class="service-icon">▣</div><span class="service-coming">ĐANG PHÁT TRIỂN</span><h3>Cửa hàng</h3><p>Không gian giới thiệu sản phẩm và dịch vụ dành cho cộng đồng.</p><a href="#support">Theo dõi cập nhật <b>↗</b></a></article>
+      </div>
+    </section>
+
+    <section class="section topup-section" id="topup">
+      <div class="section-heading"><div><div class="eyebrow">QUICK TOP UP</div><h2>Tạo đơn nạp game</h2></div><p>Chọn gói phù hợp, kiểm tra thông tin và gửi đơn để được hỗ trợ xác nhận.</p></div>
+      <div class="topup-layout">
+        <form class="panel" id="topupForm">
+          <div class="form-section-title"><span>01</span><div><b>Thông tin tài khoản</b><small>Điền chính xác để tránh nhầm tài khoản nhận vật phẩm.</small></div></div>
+          <label for="gameEmail">Email liên kết game <i>*</i></label><input id="gameEmail" type="email" required placeholder="Email liên kết với tài khoản game">
+          <div class="form-grid">
+            <div><label for="playerId">UID người chơi <i>*</i></label><input id="playerId" required placeholder="Nhập UID"></div>
+            <div><label for="gameServer">Máy chủ <i>*</i></label><select id="gameServer" required><option value="">Chọn máy chủ</option><option>Aniimo - APAC</option><option>America</option><option>Europe</option><option>Asia</option><option>TW / HK / MO</option></select></div>
+          </div>
+          <div class="form-grid">
+            <div><label for="playerName">Tên nhân vật <i>*</i></label><input id="playerName" required placeholder="Tên trong game"></div>
+            <div><label for="contactPhone">Số điện thoại Zalo <i>*</i></label><input id="contactPhone" required inputmode="tel" placeholder="Số điện thoại Zalo"></div>
+          </div>
+          <label for="otherContact">Liên hệ khác (không bắt buộc)</label><input id="otherContact" placeholder="Facebook, Discord, Telegram...">
+          <div class="form-section-title package-heading"><span>02</span><div><b>Chọn gói nạp</b><small>Giá hiển thị theo bảng giá tham khảo bạn cung cấp.</small></div></div>
+          <div class="package-toolbar">
+            <div class="package-tabs" id="packageTabs">
+              <button type="button" class="filter-tab active" data-filter="all">Tất cả</button>
+              <button type="button" class="filter-tab" data-filter="monthly">Thẻ tháng</button>
+              <button type="button" class="filter-tab" data-filter="battle">Cẩm nang</button>
+              <button type="button" class="filter-tab" data-filter="crystal">Tinh thể</button>
+            </div>
+            <input id="packageSearch" class="package-search" type="search" placeholder="Tìm gói nạp..." aria-label="Tìm gói nạp">
+          </div>
+          <p class="package-hint">Chọn phương thức nạp ở từng gói. Nạp qua UID đang tạm khóa theo ảnh tham khảo.</p>
+          <div class="packages" id="packagesGrid" aria-label="Danh sách gói nạp"></div>
+          <button class="btn btn-primary full" type="submit">Tạo đơn nạp <b>→</b></button>
+          <div class="payment-safety"><b>🔒 Lưu ý an toàn</b><span>Kiểm tra kỹ UID, máy chủ và số tiền trước khi thanh toán. Không cung cấp mật khẩu hoặc mã OTP game.</span></div>
+          <p class="fine-print">Lưu ý: phiên bản GitHub Pages hiện là website tĩnh. Đơn và tài khoản được lưu trên trình duyệt đang dùng; chưa có máy chủ xác nhận tiền hoặc tự động nạp vật phẩm. Chỉ chuyển khoản sau khi đã kiểm tra chính xác người nhận.</p>
+        </form>
+        <div class="panel payment-panel" id="paymentPanel" hidden aria-live="polite">
+          <div class="payment-heading"><div><div class="eyebrow">PAYMENT DETAILS</div><h3>Hoàn tất thanh toán</h3><p class="payment-order-note">Đơn hàng <b id="payOrderCode">—</b> đã được tạo. Đối chiếu người nhận, số tiền và nội dung trước khi chuyển khoản.</p></div><span class="status">CHỜ THANH TOÁN</span></div>
+          <div class="payment-horizontal">
+            <div class="payment-qr">
+              <div class="qr-label">MÃ THANH TOÁN</div>
+              <img src="momo-vietqr.png" alt="Mã QR MoMo và VietQR do chủ website cung cấp">
+              <p>Quét mã bằng ứng dụng ngân hàng hoặc MoMo</p>
+            </div>
+            <div class="payment-details">
+              <div class="payment-info">
+                <div><span>Gói nạp</span><b id="payPackage">—</b></div>
+                <div><span>Đơn vị nhận</span><b>MoMo / VietQR</b></div>
+                <div><span>Chủ tài khoản</span><b>NGUYEN MINH PHAT</b></div>
+            
+                <div><span>Số tiền cần chuyển</span><b id="payAmount">—</b></div>
+                <div><span>Nội dung chuyển khoản</span><b id="payContent">—</b></div>
+              </div>
+              <div class="payment-actions">
+                <button type="button" class="copy-payment" id="copyPayAmount">Copy số tiền</button>
+                <button type="button" class="copy-payment primary" id="copyPayContent">Copy nội dung</button>
+              </div>
+              <p class="fine-print payment-disclaimer">QR bạn cung cấp là mã tĩnh. Vui lòng kiểm tra đúng người nhận, nhập đúng số tiền và nội dung chuyển khoản hiển thị ở trên trước khi xác nhận. Website demo chưa tự động xác minh giao dịch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section two-col" id="middleman">
+      <div><div class="eyebrow">TRUSTED PROCESS</div><h2>Giao dịch trung gian<br>rõ ràng từng bước.</h2><p class="muted">ANIIMO tiếp nhận yêu cầu, ghi nhận thông tin hai bên và cập nhật trạng thái để các bên dễ theo dõi. Bản demo chưa giữ tiền hoặc tự động xử lý tranh chấp.</p><a class="btn btn-outline" href="#orders">Xem quy trình</a></div>
+      <div class="steps"><div><b>01</b><span><strong>Tạo yêu cầu</strong><small>Người mua hoặc người bán gửi thông tin.</small></span></div><div><b>02</b><span><strong>Admin tiếp nhận</strong><small>Kiểm tra nội dung và xác nhận phí dịch vụ.</small></span></div><div><b>03</b><span><strong>Hai bên xác nhận</strong><small>Thực hiện giao dịch theo hướng dẫn.</small></span></div><div><b>04</b><span><strong>Đóng yêu cầu</strong><small>Admin cập nhật kết quả và lưu lịch sử.</small></span></div></div>
+    </section>
+
+    <section class="section order-section" id="orders">
+      <div class="section-heading"><div><div class="eyebrow">ORDER TRACKING</div><h2>Tra cứu đơn hàng</h2></div></div>
+      <form class="lookup" id="lookupForm"><input id="orderCode" placeholder="Nhập mã đơn, ví dụ: ANI-ABC123"><button class="btn btn-primary">Tra cứu</button></form>
+      <p id="lookupResult" class="lookup-result">Đơn hàng demo được lưu trên trình duyệt hiện tại.</p>
+      <div class="order-history panel" id="orderHistory"><div class="history-head"><b>Lịch sử đơn trên thiết bị này</b><span id="historyCount">0 đơn</span></div><div id="historyList" class="history-empty">Chưa có đơn hàng nào. Đơn demo sẽ xuất hiện tại đây sau khi bạn tạo đơn.</div></div>
+    </section>
+    <section class="section support-section" id="support">
+      <div class="support-card"><div><div class="eyebrow">NEED A HAND?</div><h2>Cần hỗ trợ đơn hàng?</h2><p>Chuẩn bị mã đơn ANI-... khi cần hỗ trợ. ANIIMO không bao giờ yêu cầu mật khẩu hoặc mã OTP của tài khoản game.</p></div><a class="btn btn-primary" href="#orders">Tra cứu đơn hàng ↗</a></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">A</span><span>ANIIMO<span class="dot">.</span><small>GAME SERVICES</small></span></a><p>Nơi kết nối dịch vụ và cộng đồng game thủ.</p></div>
+    <div class="footer-links"><a href="#services">Dịch vụ</a><a href="#topup">Nạp game</a><a href="#orders">Tra cứu đơn</a><a href="#support">Hỗ trợ</a></div>
+    <div class="footer-meta"><span>© 2026 ANIIMO. All rights reserved.</span><a href="#home">Lên đầu trang ↑</a></div>
+  </footer>
+  <div class="toast-region" id="toastRegion" role="status" aria-live="polite"></div>
+
+  <div class="modal account-modal" id="loginModal" aria-hidden="true">
+    <div class="modal-box account-box">
+      <button class="close" id="closeModal" aria-label="Đóng">×</button>
+      <div class="eyebrow">ANIIMO MEMBER CENTER</div>
+      <h2>Trung tâm tài khoản</h2>
+      <p class="muted account-intro">Tạo tài khoản thành viên để quản lý thông tin và theo dõi đơn nạp.</p>
+      <div class="account-tabs" role="tablist">
+        <button type="button" class="account-tab active" id="loginTab" role="tab" aria-selected="true">Đăng nhập</button>
+        <button type="button" class="account-tab" id="registerTab" role="tab" aria-selected="false">Đăng ký</button>
+      </div>
+      <section id="loginView" class="account-view">
+        <div class="account-info">ℹ️ Nhập đúng Nickname, mã bí mật 6 số và 3 số cuối điện thoại đã đăng ký.</div>
+        <form id="loginForm" class="account-form">
+          <label for="memberLoginName">Nickname (Tài khoản) <i>*</i></label>
+          <input id="memberLoginName" autocomplete="username" required maxlength="24" placeholder="Nhập nickname của bạn...">
+          <div class="form-grid">
+            <div><label for="memberLoginPin">Mã bí mật (6 số) <i>*</i></label><div class="secret-wrap"><input id="memberLoginPin" type="password" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required placeholder="6 chữ số"><button type="button" class="reveal-secret" data-target="memberLoginPin" aria-label="Hiện mã">◉</button></div></div>
+            <div><label for="memberLoginPhone">3 số cuối điện thoại <i>*</i></label><div class="secret-wrap"><input id="memberLoginPhone" type="password" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" required placeholder="3 số cuối"><button type="button" class="reveal-secret" data-target="memberLoginPhone" aria-label="Hiện số">◉</button></div></div>
+          </div>
+          <div class="account-security"><b>🔒 Bảo mật tài khoản</b><span>Không chia sẻ mã bí mật hoặc mã OTP với bất kỳ ai.</span></div>
+          <button class="btn btn-primary full" type="submit">Vào tài khoản ngay →</button>
+        </form>
+      </section>
+      <section id="registerView" class="account-view" hidden>
+        <div class="account-info">✨ Tạo nickname riêng và thiết lập thông tin xác thực để sử dụng khu vực thành viên.</div>
+        <form id="registerForm" class="account-form">
+          <label for="memberRegisterName">Nickname (Tài khoản) <i>*</i></label>
+          <input id="memberRegisterName" autocomplete="username" required minlength="3" maxlength="24" pattern="[A-Za-z0-9_]{3,24}" placeholder="Ví dụ: AniimoPlayer">
+          <div class="form-grid">
+            <div><label for="memberRegisterPin">Tạo mã bí mật (6 số) <i>*</i></label><div class="secret-wrap"><input id="memberRegisterPin" type="password" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required placeholder="Tạo 6 chữ số"><button type="button" class="reveal-secret" data-target="memberRegisterPin" aria-label="Hiện mã">◉</button></div></div>
+            <div><label for="memberRegisterPinConfirm">Nhập lại mã bí mật <i>*</i></label><div class="secret-wrap"><input id="memberRegisterPinConfirm" type="password" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required placeholder="Nhập lại 6 số"><button type="button" class="reveal-secret" data-target="memberRegisterPinConfirm" aria-label="Hiện mã">◉</button></div></div>
+          </div>
+          <label for="memberRegisterPhone">3 số cuối điện thoại Zalo <i>*</i></label>
+          <input id="memberRegisterPhone" type="password" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" required placeholder="Ví dụ: 187">
+          <div class="account-security"><b>🔒 Lưu ý quan trọng</b><span>Hãy lưu lại nickname và mã bí mật. Bản demo lưu tài khoản trên trình duyệt hiện tại; muốn dùng nhiều thiết bị cần máy chủ và cơ sở dữ liệu.</span></div>
+          <button class="btn btn-primary full" type="submit">Tạo tài khoản ANIIMO →</button>
+        </form>
+      </section>
+      <section id="memberDashboard" class="account-view" hidden>
+        <div class="member-welcome"><span class="member-avatar">A</span><div><small>THÀNH VIÊN ANIIMO</small><h3 id="memberDisplayName">—</h3><span class="member-state">● Đã đăng nhập trên thiết bị này</span></div></div>
+        <div class="member-stats"><div><b id="memberOrderCount">0</b><span>Đơn đã tạo trên máy</span></div><div><b>Thành viên</b><span>Cấp tài khoản</span></div></div>
+        <div class="account-security"><b>Quản lý tài khoản</b><span>Đơn nạp được lưu trong trình duyệt này. Không cung cấp mật khẩu hoặc OTP game.</span></div>
+        <div class="dashboard-actions"><a class="btn btn-outline" href="#orders" id="memberOrdersLink">Xem lịch sử đơn</a><button type="button" class="btn btn-primary" id="memberLogout">Đăng xuất</button></div>
+      </section>
+      <p class="account-message" id="accountMessage" role="status" aria-live="polite"></p>
+      <p class="fine-print account-footnote">Đây là chức năng tài khoản bản demo phía trình duyệt, chưa phải hệ thống xác thực trực tuyến. Không dùng mã bí mật quan trọng hoặc trùng với mật khẩu cá nhân.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
